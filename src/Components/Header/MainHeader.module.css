@@ -1,0 +1,17 @@
+.mainHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: #741188;
+    box-shadow: 0 4px 4px 0 #000;
+  }
+  .mainHeader h1 {
+    color: #fff;
+  }
+  

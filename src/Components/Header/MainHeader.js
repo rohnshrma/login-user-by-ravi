@@ -4,7 +4,7 @@ import Navigation from "./Navigation"
 const MainHeader = (props) => {
   return (
 
-    <header className={classes.main_header}>
+    <header className={classes.mainHeader}>
         <h1>Login App</h1>
         <Navigation isLoggedIn={props.isLoggedIn} onLogout={props.onLogout}/>
     </header>

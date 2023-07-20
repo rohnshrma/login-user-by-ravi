@@ -3,6 +3,7 @@ import "./styles.css";
 
 import Login from "./Components/Login/Login";
 import MainHeader from "./Components/Header/MainHeader";
+import Home from "./Components/Home/Home";
 export default function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState();
@@ -34,7 +35,8 @@ export default function App() {
   return (
     <Fragment>
       <MainHeader onLogout={logoutHandler} isLoggedIn={isLoggedIn} />
-      <Login onLogin={logiHandler} />
+      {isLoggedIn && <Home/>}
+      {!isLoggedIn && <Login onLogin={logiHandler} />}
     </Fragment>
   );
 }
